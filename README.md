@@ -14,7 +14,7 @@ This tutorial should familiarize you with starting a local blockchain using Hard
 
 ## Build
 
-To build the smart contract we would be using [Hardhat](https://hardhat.org/). Hardhat is an Ethereum development environment and framework designed for full stack development in Solidity. In simple words you can write your smart contract, deploy them, run tests, and debug your code.
+To build the smart contract we would be using [Hardhat](https://hardhat.org/). Hardhat is an Ethereum development environment and framework designed for full stack development in Solidity. In simple words you can write your smart contract, deploy them, run tests, and debug your code with flexibility.
 
 - To setup a Hardhat project, Open up a terminal and execute these commands
 
@@ -29,17 +29,17 @@ To build the smart contract we would be using [Hardhat](https://hardhat.org/). H
   npx hardhat
   ```
 
-  - Select `Create a JavaScript project`
+  - Select `Create a basic simple project`
   - Press enter for the already specified `Hardhat Project root`
   - Press enter for the question on if you want to add a `.gitignore`
-  - Press enter for `Do you want to install this sample project's dependencies with npm @nomicfoundation/hardhat-toolbox?`
+  - Press enter for `Do you want to install this sample project's dependencies with npm (@nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers)?`
 
 Now you have a hardhat project ready to go!
 
 If you are not on mac, please do this extra step and install these libraries as well :)
 
 ```bash
-npm install --save-dev @nomicfoundation/hardhat-toolbox
+npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
 ```
 
 and press `enter` for all the questions.
@@ -122,9 +122,9 @@ Go to metamask --> click on your profile --> import account. Select private key 
 
 <Quiz questionId="c28d2f88-b2c9-4e8b-b6ab-ac8400ede5ae" />
 
-## Remix
+## Remix IDE
 
-We will now deploy our contract to local blockchain and interact with it using Remix
+We will now deploy our contract to local blockchain and interact with it using Remix IDE.
 
 Go to [remix.ethereum.org](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js) and create a new file inside the contracts folder named `Greeter.sol`
 
